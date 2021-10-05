@@ -1,0 +1,262 @@
+@import '../config/mediaQuery';
+@import '../components/buttons';
+@import '../components/dropboxItem';
+$main-color: rgb(237, 102, 83);
+$main-font: Pretendard, sans-serif;
+
+.전체네비박스 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-bottom: 1px solid #dbdbdb;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  .정렬네비박스 {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    padding: 0 0.5rem;
+    margin: 0 auto;
+    width: 992px;
+    .홈_프로필탐색_인턴채용공고 {
+      display: flex;
+      align-items: center;
+    }
+    .로그인_회원가입 {
+      display: flex;
+      align-items: center;
+      // padding: 0.25rem;
+    }
+    .비로그인_회원가입 {
+      display: flex;
+      align-items: center;
+      // padding: 0.25rem;
+    }
+  }
+}
+
+.로고박스 {
+  display: inline-block;
+  padding: 0.5rem;
+  margin-right: 15px;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+  .로고 {
+    @include mobile {
+      display: none;
+    }
+    @include tablet {
+      display: inline;
+      position: relative;
+      top: 0.3rem;
+      height: 3rem;
+    }
+    @include desktop {
+      display: inline;
+      position: relative;
+      top: 0.3rem;
+      height: 3rem;
+    }
+  }
+  .모바일로고 {
+    @include mobile {
+      display: inline;
+      height: 2rem;
+    }
+    @include tablet {
+      display: none;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+}
+
+.프로필탐색_인턴채용공고 {
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: flex;
+    .카테고리 {
+      font-size: 0.875rem;
+      padding: 0.5rem;
+      margin-right: 0.25rem;
+      color: #555;
+      text-decoration: none;
+      background-color: transparent;
+      &:hover {
+        color: rgb(63, 34, 22);
+      }
+      p {
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
+
+.비로그인_회원가입 {
+  @include mobile {
+    .로그인 {
+      display: none;
+    }
+    .회원가입 {
+      display: none;
+    }
+    .햄버거박스 {
+      @include hamburger;
+      .햄버거 {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  @include tablet {
+    .로그인 {
+      display: none;
+    }
+    .회원가입 {
+      display: none;
+    }
+    .햄버거박스 {
+      @include hamburger;
+      .햄버거 {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  @include desktop {
+    .로그인 {
+      @include smallButton($main-color, transparent, $main-color);
+    }
+    .회원가입 {
+      @include smallButton(#fff, $main-color, $main-color);
+    }
+    .햄버거박스 {
+      display: none;
+      .햄버거 {
+        display: none;
+      }
+    }
+  }
+}
+
+.로그인_회원가입 {
+  .로그인_돋보기 {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #555;
+    padding: 0.5rem;
+    margin-right: 0.25rem;
+    position: relative;
+  }
+  .로그인_채팅 {
+    font-size: 1.5rem;
+    color: #555;
+    padding: 0.5rem;
+    margin-right: 0.25rem;
+    position: relative;
+  }
+  .로그인_알람 {
+    font-size: 1.5rem;
+    color: #555;
+    padding: 0.5rem;
+    margin-right: 0.25rem;
+    position: relative;
+  }
+  .로그인_이미지컨테이너 {
+    display: none;
+    @include desktop {
+      display: inline;
+      position: relative;
+      padding: 0.5rem;
+    }
+    .로그인_이미지버튼 {
+      cursor: pointer;
+      font-weight: 400;
+      text-decoration: none;
+      color: #ed6653;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      background-color: transparent;
+      border: 1px solid transparent;
+      font-size: 0.875rem;
+      line-height: 1.5;
+      border-radius: 0.25rem;
+      .로그인_이미지박스 {
+        overflow: hidden;
+        border-radius: 50%;
+        border-color: #eee;
+        border: 1px solid #dbdbdb;
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+        .로그인_이미지 {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+    .로그인_드랍박스 {
+      font-size: 0.875rem;
+      color: #333;
+      margin-top: 0.25rem;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      border: 1px solid #dbdbdb;
+      position: absolute;
+      right: 0;
+      left: auto;
+      top: 100%;
+      z-index: 1000;
+      float: left;
+      min-width: 10rem;
+      padding: 0.5rem;
+      margin: -0.1rem 0 0;
+      text-align: center;
+      list-style: none;
+      background-color: #fff;
+      background-clip: padding-box;
+      border-radius: 0.25rem;
+      display: none;
+      .로그인_드랍아이템 {
+        @include dropboxItem;
+      }
+      .로그인_드랍링크 {
+        @include dropboxItem;
+        text-decoration: none;
+      }
+    }
+  }
+  .로그인_햄버거 {
+    @include mobile {
+      @include loginHamburger;
+      AiOutlineMenu {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+
+    @include tablet {
+      @include loginHamburger;
+      AiOutlineMenu {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+}

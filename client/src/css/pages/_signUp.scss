@@ -1,0 +1,144 @@
+@import '../config/mediaQuery';
+@import '../components/buttons';
+@import '../components/titles';
+$main-color: rgb(237, 102, 83);
+$main-font: Pretendard, sans-serif;
+
+.회원가입박스 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 28rem;
+}
+
+.회원가입_헤더 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+  h3 {
+    @include title;
+  }
+}
+
+.회원가입_텍스트 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem 0;
+  background-color: #f7f7f7;
+  border-radius: 0.3rem;
+  p {
+    margin-right: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #555;
+  }
+  .회원일시_로그인 {
+    font-size: 0.875rem;
+    color: $main-color;
+    font-weight: 700;
+  }
+}
+
+.회원가입_폼박스 {
+  margin-bottom: 2.5rem;
+  div:not(:last-of-type) {
+    margin-bottom: 1.5rem;
+    label {
+      display: inline-block;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+      font-size: 0.875rem;
+    }
+    input {
+      box-sizing: border-box;
+      padding: 0.6875rem;
+      font-size: 0.875rem;
+      font-weight: 400;
+      overflow: visible;
+      display: block;
+      width: 100%;
+      line-height: 1.5;
+      background-color: #fff;
+      background-clip: padding-box;
+      border-radius: 0.3rem;
+      border: 1px solid rgb(219, 219, 219);
+      &:focus {
+        outline: 3px solid rgb(255, 214, 208);
+        transition-delay: 0s, 0s;
+        transition-duration: 0.15s, 0.15s;
+        transition-property: border-color, box-shadow;
+        transition-timing-function: ease-in-out, ease-in-out;
+      }
+    }
+  }
+}
+
+.소셜로그인 {
+  p {
+    font-size: 0.75rem;
+    color: #999;
+    margin-bottom: 0.75rem;
+    .privacy {
+      font-size: 1rem;
+      color: #999;
+      margin-left: 0.25rem;
+      background-color: transparent;
+      color: lightseagreen;
+    }
+  }
+  .이메일로_시작 {
+    @include bigButton(#fff, $main-color, $main-color);
+  }
+  .또는 {
+    margin: 0.5rem 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    :not(:last-of-type(2)) {
+      height: 1px;
+      width: 50%;
+      border-bottom: 1px solid #dbdbdb;
+    }
+    p {
+      font-size: 0.75rem;
+      color: #aaa;
+      flex-shrink: 0;
+      height: 0.6rem;
+      padding: 0 0.75rem;
+    }
+  }
+  .카카오로그인 {
+    @include bigButton(#333, rgb(254, 229, 0));
+    margin-bottom: 1.5rem;
+    border: 1px solid transparent;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    img {
+      height: 24px;
+      vertical-align: middle;
+      margin-right: 0.5rem;
+    }
+  }
+  .고객센터 {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    p {
+      font-size: 0.75rem;
+      color: #555;
+    }
+  }
+}

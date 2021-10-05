@@ -1,0 +1,40 @@
+@import '../components/buttons';
+.로그인_헤더 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  h3 {
+    @include title(1.5rem);
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+}
+
+.애플로그인 {
+  @include bigButton(#fff, #000, transparent);
+  margin-top: 0.5rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  img {
+    vertical-align: middle;
+    height: 24px;
+    margin-right: 0.75rem;
+    border-style: none;
+  }
+}
+
+.고객센터박스 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  p {
+    font-size: 0.75rem;
+    color: #555;
+  }
+}
+
+.로그아웃 {
+  @include smallButton(#fff, #000, transparent);
+}

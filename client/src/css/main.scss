@@ -1,0 +1,16 @@
+// components
+@import './components/buttons';
+@import './components/navbar';
+@import './components/titles';
+@import './components/dropboxItem';
+// config
+@import './config/reset';
+@import './config/mediaQuery';
+// layout
+@import './layout/main';
+// pages
+@import './pages/error';
+@import './pages/index';
+@import './pages/login';
+@import './pages/signUp';
+@import './pages/discover';

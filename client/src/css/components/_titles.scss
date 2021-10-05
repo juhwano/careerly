@@ -1,0 +1,6 @@
+@mixin title($font-size: 1rem, $color: #000) {
+  font-size: $font-size;
+  color: $color;
+  text-align: center;
+  font-weight: 400;
+}

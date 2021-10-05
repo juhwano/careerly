@@ -22,7 +22,8 @@ database : mongoDB
 
 
 redux<br/>
-![redux_store저장](https://user-images.githubusercontent.com/77667889/135948712-536fed51-205b-4d91-bb81-f2fbcc133df5.gif)
+![redux](https://user-images.githubusercontent.com/77667889/135959440-9bd73dac-eca8-479c-b4cd-ee80a0ec013e.gif)
+
 
 
 ## 기여 방법

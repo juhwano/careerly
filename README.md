@@ -1,4 +1,4 @@
-# careerly clone project ![deploy](https://github.com/gae-jang-mo/app/workflows/deploy/badge.svg)
+# careerly clone project
 
 >careely 레이아웃과 일부 기능 구현
 

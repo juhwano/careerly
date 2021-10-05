@@ -1,4 +1,6 @@
-# careerly clone project
+# careerly clone project 
+![node_badge](https://img.shields.io/badge/node-v16.0.0-brightgreen)
+![npm_badge](https://img.shields.io/badge/npm-v7.10.0-blue)
 
 >careely 레이아웃과 일부 기능 구현
 

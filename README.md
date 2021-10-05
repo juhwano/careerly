@@ -12,15 +12,16 @@ database : mongoDB
 
 ## 기능
 조건부 렌더링
-![로그인_메뉴변경](https://user-images.githubusercontent.com/77667889/135948762-359f0a40-d253-47b7-97f3-5f5cf2a691fd.gif)
+![조건부렌더링](https://user-images.githubusercontent.com/77667889/135959120-dc6500e8-21b1-483c-aaaa-fefac1c2ee2d.gif)
+
 
 
 반응형
+![비로그인_반응형](https://user-images.githubusercontent.com/77667889/135958724-4c04526f-9052-438a-a671-3f95bf85afbe.gif)
 ![로그인_미디어쿼리](https://user-images.githubusercontent.com/77667889/135948823-1172b8de-6c5b-4c6d-afc5-ec1908cd7343.gif)
-![비로그인_미디어쿼리](https://user-images.githubusercontent.com/77667889/135949259-d79f1cd7-e2cf-4090-a22c-dfe82f7f9c17.gif)
 
 
-redux 상태관리<br/>
+redux<br/>
 ![redux_store저장](https://user-images.githubusercontent.com/77667889/135948712-536fed51-205b-4d91-bb81-f2fbcc133df5.gif)
 
 

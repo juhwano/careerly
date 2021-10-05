@@ -25,7 +25,7 @@ export default function LoginComponent({
           <div>
             <label htmlFor="email">이메일</label>
             <input
-              type="text"
+              type="email"
               name="email"
               placeholder="이메일 입력"
               value={email}
@@ -36,7 +36,7 @@ export default function LoginComponent({
           <div>
             <label htmlFor="password">비밀번호</label>
             <input
-              type="text"
+              type="password"
               name="password"
               placeholder="비밀번호 입력"
               value={password}

@@ -37,7 +37,7 @@ export default function SignUpComponent({
           <div>
             <label htmlFor="email">이메일</label>
             <input
-              type="text"
+              type="email"
               name="email"
               value={email}
               placeholder="example@ssac.com"
@@ -48,7 +48,7 @@ export default function SignUpComponent({
           <div>
             <label htmlFor="password">비밀번호</label>
             <input
-              type="text"
+              type="password"
               name="password"
               value={password}
               placeholder="영문, 숫자 포함 6자 이상"
